@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Forum&family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+h1 {
+    font-family: Forum;
+}
+
+h4 {
+    font-family: Rampart One;
+}
+
+h5 {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-shadow {
+    box-shadow: 0 10px 20px rgba(189, 138, 136, 0.75);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
