@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Icone = () => {
     return (
-        <div className='flex space-x-12 mt-24 ml-48'>
+        <div className='flex space-x-12 mt-8 md:mt-24 md:ml-48'>
             <div>
                 <a href="https://www.linkedin.com/in/jessica-synowski-43a962a3/" target='_blank'><FaLinkedin className='size-16 text-white'/></a>
             </div>

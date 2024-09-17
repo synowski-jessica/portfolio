@@ -21,6 +21,12 @@ h5 {
     box-shadow: 0 10px 20px rgba(189, 138, 136, 0.75);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

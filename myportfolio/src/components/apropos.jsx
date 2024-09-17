@@ -15,8 +15,8 @@ const Apropos = () => {
                 {/* Contenu principal */}
                 <div className='col-start-1 md:col-start-3 col-span-12 md:col-span-8'>
                     <div className='flex flex-col md:flex-row justify-center items-center'>
-                        <div className='mb-4 md:mb-0'>
-                            <img src={Aboutme} alt="photo d'une personne" className='w-full md:w-auto' />
+                        <div className=''>
+                            <img src={Aboutme} alt="photo d'une personne" className='w-full h-24 md:w-auto md:h-full' />
                         </div>
                         <div>
                             <h1 className="text-colorRoseBackground text-4xl md:text-8xl text-center">A propos de moi</h1>
@@ -24,7 +24,7 @@ const Apropos = () => {
                     </div>
 
                     {/* Section des cartes */}
-                    <div className='grid grid-cols-1 md:grid-cols-8 gap-8 mt-4'>
+                    <div className='grid grid-cols-1 mr-4 md:mr-auto md:grid-cols-8 gap-8 mt-4'>
                         <div className='col-span-1 md:col-span-4 border border-colorRoseBackground p-3 rounded-lg custom-shadow '>
                             <h2 className='text-colorMarron text-center text-lg italic'>Pourquoi avoir choisi de faire une reconversion professionnelle ?</h2>
                             <p className='text-colorMarron my-3 text-sm text-justify'>Après dix ans d’expérience en tant qu’assistante de gestion, j’ai ressenti le besoin de m’orienter <span className='font-bold'>vers un métier plus stimulant sur le plan intellectuel. </span></p>
