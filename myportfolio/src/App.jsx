@@ -7,6 +7,8 @@ import './index.css';
 import Apropos from './components/apropos'
 import Competences from './components/competences';
 import Realisation from './components/realisation';
+import Contact from './components/contact'
+import FooterWeb from './components/footer';
 
 
 
@@ -20,7 +22,7 @@ function App() {
         className="h-screen bg-cover bg-center bg-[url('/src/assets/accueilMobile.png')] sm:bg-[url('/src/assets/backgroundLight.png')] "
          
       >
-        <div className='grid grid-cols-12 grid-rows-12 gap-2 mx-8'>
+        <div className='grid grid-cols-12 gap-2 mx-8'>
             <div className='col-span-12 md:col-span-5'>
               <DeveloppeuseFullstack/>
               <PresentationMain/>
@@ -37,7 +39,10 @@ function App() {
       <Competences/>
       {/* 4e section */}
       <Realisation/>
-      
+      <Contact/>
+      <div>
+        <FooterWeb/>
+      </div>
   
     </>
   )

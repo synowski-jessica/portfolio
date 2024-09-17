@@ -1,4 +1,4 @@
-import LogoLight from '../assets/logoLight2.png'
+import LogoLight from '../assets/logoLight4.png'
 import BanderoleCoeur from '../assets/banderoleCoeur.png'
 import {useState, useEffect} from 'react'
 import { FaTimes } from "react-icons/fa";
