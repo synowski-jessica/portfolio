@@ -46,7 +46,7 @@ const Navbar = () => {
         <nav className={`sticky top-0 left-0 w-full z-50 flex items-center justify-between p-4 transition-all duration-300 ${isScrolled ? 'bg-opacity-80 bg-colorRoseNav text-colorMarronFonce' : 'text-colorMarronFonce bg-colorRoseBackground'}`}>
          {/* Logo à gauche  */}
         <div className="flex items-center flex-1">
-          <img src={LogoLight} alt="Logo" className={` transition-all duration-500  ${isScrolled ? ' h-12 md:h-12 ' : 'h-16 md:h-16'}`}  />
+          <img src={LogoLight} alt="Logo" className={` transition-all duration-500  ${isScrolled ? ' mt-4 h-12 md:h-12 ' : 'h-16 md:h-16'}`}  />
         </div>
         <div className='flex items-center flex-1'>
           <img src={BanderoleCoeur} alt="banderole décorative de coeur" className={` transition-all duration-500  ${isScrolled ? 'h-12 mt-4 md:h-16 md:-mt-6' : 'h-16 -mt-6 md:h-24 md:-mt-6 '}`} />
@@ -66,7 +66,7 @@ const Navbar = () => {
           {click && content}
         </div>
         <button className='block sm:hidden transition' alt="menu de la navbar" onClick={handleClick}>
-          {click?<FaTimes />:<CiMenuFries />}
+          {click?<FaTimes />:<CiMenuFries className='text-2xl' />}
         </button>
 
       </nav>
