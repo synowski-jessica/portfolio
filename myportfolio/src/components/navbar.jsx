@@ -49,7 +49,7 @@ const Navbar = () => {
           <img src={LogoLight} alt="Logo" className={` transition-all duration-500  ${isScrolled ? ' h-12 md:h-12 ' : 'h-16 md:h-16'}`}  />
         </div>
         <div className='flex items-center flex-1'>
-          <img src={BanderoleCoeur} className={` transition-all duration-500  ${isScrolled ? 'h-12 mt-4 md:h-16 md:-mt-6' : 'h-16 -mt-6 md:h-24 md:-mt-6 '}`} />
+          <img src={BanderoleCoeur} alt="banderole décorative de coeur" className={` transition-all duration-500  ${isScrolled ? 'h-12 mt-4 md:h-16 md:-mt-6' : 'h-16 -mt-6 md:h-24 md:-mt-6 '}`} />
         </div>
   
         {/* Navigation à droite */}
@@ -65,7 +65,7 @@ const Navbar = () => {
         <div>
           {click && content}
         </div>
-        <button className='block sm:hidden transition' onClick={handleClick}>
+        <button className='block sm:hidden transition' alt="menu de la navbar" onClick={handleClick}>
           {click?<FaTimes />:<CiMenuFries />}
         </button>
 

@@ -11,16 +11,18 @@ const Contact = ()=>{
                         method="POST"
                         >
                         <label className="text-colorMarronFonce text-center mb-2">
-                            Votre adresse email*</label>
+                            Votre adresse email*
                         <br></br>
-                        <input type="email" name="email" required className="rounded-sm w-80 md:w-[500px] mb-2"/>
+                        <input type="email" name="email" required className="rounded-sm w-72 md:w-[500px] mb-2"/>
+                        </label>
                         <br></br>
-                        <label className="text-colorMarronFonce mb-2">Votre message*</label>
+                        <label className="text-colorMarronFonce mb-2">Votre message*
                         <br></br>
-                        <textarea name="message" required className="rounded-sm w-80 h-48 mb-2 md:w-[500px]"></textarea>
+                        <textarea name="message" required className="rounded-sm w-72 h-48 mb-2 md:w-[500px]"></textarea>
+                        </label>
                         <br></br>   
                         <p className="text-colorMarronFonce text-sm mb-2">* Champs obligatoire</p>                   
-                        <button type="submit" className="text-colorMarronFonce text-xl border border-colorMarronFonce text-center p-1 rounded-md hover:bg-colorRoseBackground">Envoyer</button>
+                        <button type="submit" alt="bouton envoyer le formulaire" className="text-colorMarronFonce text-xl border border-colorMarronFonce text-center p-1 rounded-md hover:bg-colorRoseBackground">Envoyer</button>
                         </form>
                     </div>
                     </div>

@@ -12,7 +12,7 @@ const Icone = () => {
                 <a href="https://github.com/synowski-jessica/" target='_blank'><FaGithub className='size-16 text-white'/></a>
             </div>
             <div>
-                <a href="../public/cvJessicaSynowskiV3.pdf" target='_blank' download className='text-white text-6xl'><h4>CV</h4></a>
+                <a href="https://synowski-jessica.github.io/portfolio/cvJessicaSynowskiV3.pdf" target='_blank' download className='text-white text-6xl'><h4>CV</h4></a>
             </div>
         </div>
         
