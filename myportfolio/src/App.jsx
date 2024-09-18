@@ -19,7 +19,7 @@ function App() {
     <>
       {/* 1ere section */}
       <div id="accueil"
-        className="min-h-screen bg-cover bg-center bg-[url('/src/assets/accueilMobile.png')] sm:bg-[url('/src/assets/backgroundLight.png')] "
+        className="min-h-screen bg-cover bg-center bg-[url('/src/assets/accueilMobile.png')] md:bg-[url('/src/assets/backgroundLight.png')] lg:bg-[url('/src/assets/backgroundLight.png')]"
          
       >
         <div className='grid grid-cols-12 gap-2 mx-8'>

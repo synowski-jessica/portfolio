@@ -20,8 +20,7 @@ const Competences = () => {
                 <div className='relative bg-colorRoseBackground text-3xl text-white md:col-start-1 md:col-span-11 md:text-8xl text-center p-4 flex justify-center items-center'>
                      {/* Cercle décoratif en haut à gauche */}
                     <div className="absolute top-0 left-0 w-16 h-16 md:w-40 md:h-40 border-2 border-colorMarronFonce rounded-full opacity-30 transform -translate-x-1/2 -translate-y-1/2"></div>
-                    {/* Cercle décoratif en bas à droite */}
-                    <div className="block absolute -bottom-[750px] -right-10 w-12 h-12 border-2 border-colorMarronFonce rounded-full opacity-30 transform -translate-x-1/2 -translate-y-1/2 md:hidden"></div>
+                   
                     <img src={Skills} alt="photo skills" className='w-24 h-20 md:h-36 md:w-48'/>
                     <h1 className='md:ml-24'>Mes compétences</h1>
                     {/* Éléments de décoration (3 étages de points) */}
