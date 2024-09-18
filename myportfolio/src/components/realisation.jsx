@@ -126,7 +126,7 @@ const Realisation =()=>{
                 </div>
                 <div className="mt-2">
                     <h6 className="text-sm text-colorMarronFonce">Objectif:</h6>
-                    <p className="text-colorMarronFonce">Réalisation de mon portfolio pour partager mes projets collectifs et personnels. J’ai utilisé Caneva pour faire la maquette grâce aux illustrations intégrées</p>
+                    <p className="text-colorMarronFonce">Réalisation de mon portfolio pour partager mes projets collectifs et personnels. J’ai utilisé Canva pour faire la maquette grâce aux illustrations intégrées</p>
                 </div>
                 <div className="mt-2 flex items-center justify-center space-x-10">
                     <h6 className="text-sm text-colorMarronFonce italic hover:border border-colorMarronFonce p-2 rounded-full"><a href="https://github.com/synowski-jessica/portfolio" target='_blank'>Repo Github</a></h6>

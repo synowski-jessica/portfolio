@@ -103,7 +103,7 @@ const Competences = () => {
                     </div>
                 </div>
                 <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 md:col-start-2 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow">
-                    <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-lg shadow-colorRoseBackground p-2">MES SOFTSKILLS</h5>
+                    <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2">MES SOFTSKILLS</h5>
                     <div className="p-2">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Esprit d’équipe **</h6>
                         <div className="flex justify-around items-center mt-2">
@@ -133,7 +133,7 @@ const Competences = () => {
                     </div>
                 </div>
                 <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow">
-                    <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-lg shadow-colorRoseBackground p-2">MES HARDSKILLS</h5>
+                    <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2">MES HARDSKILLS</h5>
                     <div className="p-2 mt-3">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Frameworks et Librairies **</h6>
                         <div className="flex justify-around items-center mt-4">
