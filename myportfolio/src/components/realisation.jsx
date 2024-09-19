@@ -3,13 +3,12 @@ import FlecheDroite from '../assets/flecheDroite.png'
 import Dataviz from '../assets/dataviz.mp4'
 import ReseauSocialPHP from '../assets/reseauSocialPHP.mp4'
 import OkaMeuble from '../assets/okaMeuble.png'
-import Rainbow from '../assets/rainbow6.png'
 import Portfolio from '../assets/portfolio.png'
 import Mastermind from '../assets/mastermind.mp4'
 import Nephis from '../assets/nephis.mp4'
 import Pictoria from '../assets/pictoria.mp4'
-import Alaia1 from '../assets/alaia1.png'
-import Alaia2 from '../assets/alaia2.png'
+import AlaiaWave from '../assets/alaiaWave.mp4'
+import Rainbow from '../assets/rainbow6.mp4'
 
 
 const Realisation =()=>{
@@ -76,7 +75,10 @@ const Realisation =()=>{
             </div>
              {/* 2e ligne de projet */}
              <div className='md:col-start-2 md:col-span-3 border border-colorRoseBackground custom-shadow  p-3 rounded-lg'>
-                <img src={Rainbow} alt="rainbow 6 siege"/>
+                <video controls >
+                    <source src={Rainbow} type="video/mp4" className="w-96 h-60 mt-2 rounded-md" />
+                    Votre navigateur ne prend pas en charge la balise vidéo.
+                </video>
                 <h5 className="text-colorMarronFonce mt-2">RAINBOW 6 SIEGE</h5>
                 <div className="mt-2 flex items-center justify-center">
                      <h6 className="text-sm text-colorMarronFonce">Stack utilisées:</h6>
@@ -153,14 +155,10 @@ const Realisation =()=>{
                 </div>
             </div>
             <div className='md:col-start-5 md:col-span-3 border border-colorRoseBackground custom-shadow  p-3 rounded-lg'>
-                <div className='flex justify-center space-x-2'>
-                    <div>
-                        <img src={Alaia1} className='w-48 h-30 mt-2 rounded-md'/>
-                    </div>
-                    <div>
-                        <img src={Alaia2} className='w-48 h-30 mt-2 rounded-md'/>
-                    </div>
-                </div>
+                <video controls>
+                    <source src={AlaiaWave} type="video/mp4" className=" w-96 h-60 mt-2 rounded-md" />
+                    Votre navigateur ne prend pas en charge la balise vidéo.
+                </video>
                 
                 <h5 className="text-colorMarronFonce mt-2">ALAIA WAVE</h5>
                 <div className="mt-2 flex items-center justify-center">
