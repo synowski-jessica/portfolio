@@ -12,8 +12,16 @@ import { DiMysql } from "react-icons/di";
 import { FaDocker } from "react-icons/fa";
 import { FaWordpressSimple } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Competences = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Durée des animations
+        });
+      }, []);
     return (
         <>
             <div id="competences" className="mt-6 grid grid-cols-1 md:grid-cols-10 gap-2  md:space-x-10">
@@ -102,8 +110,8 @@ const Competences = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 md:col-start-2 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow">
-                    <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2">MES SOFTSKILLS</h5>
+                <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 md:col-start-2 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow" data-aos="flip-right" data-aos-delay="400" data-aos-duration="1400">
+                    <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2" >MES SOFTSKILLS</h5>
                     <div className="p-2">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Esprit d’équipe **</h6>
                         <div className="flex justify-around items-center mt-2">
@@ -132,7 +140,7 @@ const Competences = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow">
+                <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow"data-aos="flip-left" data-aos-delay="400" data-aos-duration="1600">
                     <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2">MES HARDSKILLS</h5>
                     <div className="p-2 mt-3">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Frameworks et Librairies **</h6>

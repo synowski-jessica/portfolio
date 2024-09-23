@@ -1,7 +1,14 @@
 import dataProjets from "./dataProjet"
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CardProject =()=>{
-    
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Durée des animations
+        });
+      }, []);
     
     return(
             <>
@@ -12,7 +19,7 @@ const CardProject =()=>{
                 :data.id===2||data.id===5||data.id===8
                 ?'md:col-start-5 md:col-span-3 border border-colorRoseBackground custom-shadow  p-3 rounded-lg'
                 :'md:col-start-8 md:col-span-3 border border-colorRoseBackground custom-shadow  p-3 rounded-lg'
-            }`}>
+            }`} data-aos="zoom-in-up">
                 {data.video?
                 (<video controls >
                     <source src={data.video} type="video/mp4" className="w-96 h-60 mt-2 rounded-md" />
@@ -31,7 +38,7 @@ const CardProject =()=>{
                     <h6 className="text-sm text-colorMarronFonce">Objectif:</h6>
                     <p className="text-colorMarronFonce">{data.description} </p>
                 </div>
-                <div className="mt-3 flex items-center justify-center space-x-10">
+                <div className="mt-3 flex items-center justify-center">
                     <h6 className="text-sm text-colorMarronFonce italic hover:border border-colorMarronFonce p-2 rounded-full"><a href={data.github} target='_blank'>{data.titregithub}</a></h6>
                     <h6 className="text-sm text-colorMarronFonce italic hover:border border-colorMarronFonce p-2 rounded-full"><a href={data.githubv2} target='_blank'>{data.titregithubv2}</a></h6>
                     <h6 className="text-sm text-colorMarronFonce italic hover:border border-colorMarronFonce p-2 rounded-full"><a href={data.site} target='_blank'>{data.titreSite}</a></h6>
