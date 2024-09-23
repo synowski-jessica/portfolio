@@ -26,7 +26,7 @@ const Navbar = () => {
             <img src={AboutNavbar} className="size-7 -ml-1" alt="icone a propos de moi"/>
             <a href="#apropos" onClick={handleClick} className="">A PROPOS</a>
           </li>
-          <li className='flex space-x-1'>
+          <li className='flex items-end space-x-1'>
             <img src={SkillNavbar} className=" w-9 -ml-2" alt="icone compétences"/>
             <a href="#competences" onClick={handleClick} className="">MES COMPETENCES</a></li>
           <li className='flex space-x-2'>
