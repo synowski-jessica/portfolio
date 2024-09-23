@@ -29,7 +29,7 @@ const dataProjets=
             "id":2,
             "titre":"MASTERMIND",
             "stacks":"HTML, CSS, JS",
-            "description":"Projet personnel : Développement du jeu Mastermind. Actuellement, une version 1 est en cours de création pour refondre l’ensemble du code en <span className='font-bold'>programmation orientée objet (POO)</span>. Des <span className='font-bold'>tests unitaires</span> sont également en développement, contrairement à la version 0 qui n’était pas testable. ",
+            "description":"Projet personnel : Développement du jeu Mastermind. Actuellement, une version 1 est en cours de création pour refondre l’ensemble du code en programmation orientée objet (POO). Des tests unitaires sont également en développement, contrairement à la version 0 qui n’était pas testable. ",
             "titregithub":"Repo Github Vanilla JS",
             "github":"https://github.com/synowski-jessica/mastermind",
             "titregithubv2":"Repo Github POO JS",

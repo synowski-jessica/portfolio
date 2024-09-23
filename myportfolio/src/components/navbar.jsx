@@ -3,22 +3,39 @@ import BanderoleCoeur from '../assets/banderoleCoeur.png'
 import {useState, useEffect} from 'react'
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
+import { IoHome } from "react-icons/io5";
+import Project from "../assets/project.png";
+import AboutNavbar from "../assets/aboutnavbar.png";
+import SkillNavbar from "../assets/skillNavbar.png"
+import { MdContactMail } from "react-icons/md";
 
 const Navbar = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [click,setClick]=useState(false)
   const handleClick=()=>setClick(!click)
-  
 
-  const content = <>
-  <div className='lg:hidden block absolute top-16 mr-3 rounded-lg w-60 h-44 right-0 bg-colorRoseNav transition'>
-     <ul className=" text-xl p-5 ">
-          <li><a href="#accueil" className="my-4">ACCUEIL</a></li>
-          <li><a href="#apropos" className="my-4">A PROPOS</a></li>
-          <li><a href="#competences" className="my-4">MES COMPETENCES</a></li>
-          <li><a href="#realisations" className="my-4">MES REALISATIONS</a></li>
-          <li><a href="#contact" className="my-4">CONTACT</a></li>
+   const content = <>
+   <div className={`lg:hidden block absolute top-16 right-0 mr-3 rounded-lg w-72 h-60 border border-colorMarronFonce bg-colorRoseNav transition-transform duration-500 ${click ? 'translate-y-0' : '-translate-y-full'} `}>
+     <ul className=" text-xl p-5 space-y-4">
+          <li className='flex space-x-2'>
+            <IoHome className='text-2xl' />
+            <a href="#accueil" onClick={handleClick} className="">ACCUEIL</a>
+          </li>
+          <li className='flex space-x-2'>
+            <img src={AboutNavbar} className="size-7 -ml-1" alt="icone a propos de moi"/>
+            <a href="#apropos" onClick={handleClick} className="">A PROPOS</a>
+          </li>
+          <li className='flex space-x-1'>
+            <img src={SkillNavbar} className=" w-9 -ml-2" alt="icone compétences"/>
+            <a href="#competences" onClick={handleClick} className="">MES COMPETENCES</a></li>
+          <li className='flex space-x-2'>
+            <img src={Project} className="size-7 -ml-1" alt="icone projet"/>
+            <a href="#realisations" onClick={handleClick} className="">MES REALISATIONS</a></li>
+          <li className='flex items-center space-x-2'>
+            <MdContactMail className='text-2xl'/>
+            <a href="#contact" onClick={handleClick} className="">CONTACT</a>
+          </li>
         </ul>
     </div></>
  
@@ -56,7 +73,7 @@ const Navbar = () => {
         <div className='lg:flex md:flex lg:flex-1 font-normal justify-end hidden'>
           <ul className="flex items-center text-center space-x-10 ">
             <li><a href="#accueil" className=" py-2 px-4 border  border-colorMarronFonce rounded-full text-colorMarronFonce font-bold tracking-widest hover:bg-colorRoseNav">ACCUEIL</a></li>
-            <li className='hover:underline hover:decoration-colorMarronFonce '><a href="#apropos" className="font-bold  tracking-widest">A PROPOS</a></li>
+            <li className='hover:underline hover:decoration-colorMarronFonce '><a href="#apropos" className="font-bold  tracking-widest">{click?<FaTimes />:"A PROPOS"}</a></li>
             <li className='hover:underline hover:decoration-colorMarronFonce '><a href="#competences" className="font-bold tracking-widest">MES COMPETENCES</a></li>
             <li className='hover:underline hover:decoration-colorMarronFonce '><a href="#realisations" className="font-bold tracking-widest">MES REALISATIONS</a></li>
             <li className='hover:underline hover:decoration-colorMarronFonce '><a href="#contact" className="font-bold tracking-widest">CONTACT</a></li>
@@ -65,7 +82,7 @@ const Navbar = () => {
         <div>
           {click && content}
         </div>
-        <button className='block sm:hidden transition' alt="menu de la navbar" onClick={handleClick}>
+        <button className='block lg:hidden transition text-2xl' alt="menu de la navbar" onClick={handleClick}>
           {click?<FaTimes />:<CiMenuFries className='text-2xl' />}
         </button>
 

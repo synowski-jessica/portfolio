@@ -23,15 +23,15 @@ const CardProject =()=>{
                 )}
                  
                 <h5 className="text-colorMarronFonce mt-2">{data.titre}</h5>
-                <div className="mt-2 flex items-center justify-center">
+                <div className="mt-2  ">
                      <h6 className="text-sm text-colorMarronFonce">Stack utilisées:</h6>
                      <p className="text-colorMarronFonce">{data.stacks}</p>
                 </div>
-                <div className="mt-2">
+                <div className="mt-3">
                     <h6 className="text-sm text-colorMarronFonce">Objectif:</h6>
                     <p className="text-colorMarronFonce">{data.description} </p>
                 </div>
-                <div className="mt-2 flex items-center justify-center space-x-10">
+                <div className="mt-3 flex items-center justify-center space-x-10">
                     <h6 className="text-sm text-colorMarronFonce italic hover:border border-colorMarronFonce p-2 rounded-full"><a href={data.github} target='_blank'>{data.titregithub}</a></h6>
                     <h6 className="text-sm text-colorMarronFonce italic hover:border border-colorMarronFonce p-2 rounded-full"><a href={data.githubv2} target='_blank'>{data.titregithubv2}</a></h6>
                     <h6 className="text-sm text-colorMarronFonce italic hover:border border-colorMarronFonce p-2 rounded-full"><a href={data.site} target='_blank'>{data.titreSite}</a></h6>
