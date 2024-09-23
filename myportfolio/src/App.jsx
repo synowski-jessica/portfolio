@@ -6,7 +6,7 @@ import Photo from './assets/moi.png'
 import './index.css';
 import Apropos from './components/apropos'
 import Competences from './components/competences';
-import Realisation from './components/realisation';
+import Realisation from './components/projets/realisation';
 import Contact from './components/contact'
 import FooterWeb from './components/footer';
 
