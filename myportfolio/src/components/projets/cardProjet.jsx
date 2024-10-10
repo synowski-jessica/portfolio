@@ -19,7 +19,8 @@ const CardProject =()=>{
                 :data.id===2||data.id===5||data.id===8
                 ?'md:col-start-5 md:col-span-3 border border-colorRoseBackground custom-shadow  p-3 rounded-lg'
                 :'md:col-start-8 md:col-span-3 border border-colorRoseBackground custom-shadow  p-3 rounded-lg'
-            }`} data-aos="zoom-in-up">
+            }
+            `} data-aos="zoom-in-up">
                 {data.video?
                 (<video controls >
                     <source src={data.video} type="video/mp4" className="w-96 h-60 mt-2 rounded-md" />
