@@ -9,6 +9,9 @@ export default {
         colorRoseBackground: "#E8BCB3",
         colorRoseNav: "#FFE4DD",
       },
+      animation: {
+        "slow-bounce": "bounce 2s infinite",
+      },
     },
   },
   plugins: [],
