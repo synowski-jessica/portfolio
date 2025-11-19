@@ -3,15 +3,26 @@ import Equipe from '../assets/equipe.png'
 import Curiosite from '../assets/curiosite.png'
 import Autonomie from '../assets/autonomie.png'
 import { FaReact } from "react-icons/fa";
-import { FaLaravel } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
+import { TbBrandSass } from "react-icons/tb";
+import { SiPhpstorm } from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiCanva } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandVscode } from "react-icons/tb";
+import { SiJest } from "react-icons/si";
 import { SiPhpmyadmin } from "react-icons/si";
 import { DiPostgresql } from "react-icons/di";
+import { SiJira } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
+import { FaGithub } from "react-icons/fa";
+import { SiInkscape } from "react-icons/si";
+import { IoLogoGitlab } from "react-icons/io5";
+import { TbBrandAsana } from "react-icons/tb";
 import { FaDocker } from "react-icons/fa";
 import { FaWordpressSimple } from "react-icons/fa";
+import { FiDatabase } from "react-icons/fi";
 import { FaFigma } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -112,7 +123,7 @@ const Competences = () => {
                 </div>
                 <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 md:col-start-2 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow" data-aos="flip-right" data-aos-delay="400" data-aos-duration="1400">
                     <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2" >MES SOFTSKILLS</h5>
-                    <div className="p-2">
+                    <div className="p-2 mt-3">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Esprit d’équipe **</h6>
                         <div className="flex justify-around items-center mt-2">
                             <div className='flex flex-col items-center'>
@@ -121,7 +132,7 @@ const Competences = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-3">
+                    <div className="p-2 mt-6 md:mt-10">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Curiosité & apprentissage continu **</h6>
                         <div className="flex justify-around items-center mt-2">
                             <div className='flex flex-col items-center'>
@@ -130,7 +141,7 @@ const Competences = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-3">
+                    <div className="p-2 mt-6 md:mt-10">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Organisation & Autonomie **</h6>
                         <div className="flex justify-around items-center mt-2">
                             <div className='flex flex-col items-center'>
@@ -143,28 +154,36 @@ const Competences = () => {
                 <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow"data-aos="flip-left" data-aos-delay="400" data-aos-duration="1600">
                     <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2">MES HARDSKILLS</h5>
                     <div className="p-2 mt-3">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Frameworks et Librairies **</h6>
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Front End **</h6>
                         <div className="flex justify-around items-center mt-4">
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>REACT</p>
                                 <FaReact className="text-colorMarronFonce text-2xl" />
                             </div>
                             <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>LARAVEL</p>
-                                <FaLaravel  className="text-colorMarronFonce text-2xl" />
-                            </div>
-                            <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>NODE.JS</p>
-                                <FaNode className="text-colorMarronFonce text-2xl" />
+                                <p className='text-colorMarronFonce text-xs'>NEXT JS</p>
+                                <RiNextjsLine className="text-colorMarronFonce text-2xl" />
                             </div>
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>TAILWIND</p>
                                 <RiTailwindCssFill className="text-colorMarronFonce text-2xl" />
                             </div>
+                            <div className='flex flex-col items-center'>
+                                <p className='text-colorMarronFonce text-xs'>SASS</p>
+                                <TbBrandSass className="text-colorMarronFonce text-2xl" />
+                            </div>
+                            <div className='flex flex-col items-center'>
+                                <p className='text-colorMarronFonce text-xs'>TWIG</p>
+                                <FaCode className="text-colorMarronFonce text-2xl" />
+                            </div>
+                            <div className='flex flex-col items-center'>
+                                <p className='text-colorMarronFonce text-xs'>WORDPRESS</p>
+                                <FaWordpressSimple   className="text-colorMarronFonce text-2xl" />
+                            </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-8 md:mt-16">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Base de données **</h6>
+                    <div className="p-2 mt-6 md:mt-8">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Back End **</h6>
                         <div className="flex justify-around items-center mt-4">
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>MYSQL</p>
@@ -178,25 +197,85 @@ const Competences = () => {
                                 <p className='text-colorMarronFonce text-xs'>POSTGRESQL</p>
                                 <DiPostgresql  className="text-colorMarronFonce text-2xl" />
                             </div>
+                            <div className='flex flex-col items-center'>
+                                <p className='text-colorMarronFonce text-xs'>ORM SEQUILIZE</p>
+                                <FiDatabase  className="text-colorMarronFonce text-2xl" />
+                            </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-8 md:mt-16">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Divers **</h6>
-                        <div className="flex justify-around items-center mt-4">
-                            <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>WORDPRESS</p>
-                                <FaWordpressSimple   className="text-colorMarronFonce text-2xl" />
+                    <div className="p-2 mt-6 flex justify-between gap-20 md:mt-8">
+                        <div className='w-1/2'>
+                            <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Design **</h6>
+                            <div className="flex justify-around items-center mt-4">
+                                
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>FIGMA</p>
+                                    <FaFigma   className="text-colorMarronFonce text-2xl" />
+                                </div>
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>INKSCAPE</p>
+                                    < SiInkscape  className="text-colorMarronFonce text-2xl" />
+                                </div>
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>CANVA</p>
+                                    < SiCanva   className="text-colorMarronFonce text-2xl" />
+                                </div>
                             </div>
+                        </div>
+                        <div className='w-1/2'>
+                            <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Tests **</h6>
+                            <div className="flex justify-around items-center mt-4">
+                                
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>JEST</p>
+                                    <SiJest className="text-colorMarronFonce text-2xl" />
+                                </div>
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>PLAYWRIGHT</p>
+                                    <img src={"./playwrightIcon.png"} alt="playwright" className="w-8" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div className="p-2 mt-6 md:mt-8">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Gestion & Collaboration **</h6>
+                            <div className="flex justify-around items-center mt-4">
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>JIRA</p>
+                                    <SiJira     className="text-colorMarronFonce text-2xl" />
+                                </div>
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>ASANA</p>
+                                    < TbBrandAsana   className="text-colorMarronFonce text-2xl" />
+                                </div>
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>GITHUB</p>
+                                    <FaGithub    className="text-colorMarronFonce text-2xl" />
+                                </div>
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>GITLAB</p>
+                                    < IoLogoGitlab   className="text-colorMarronFonce text-2xl" />
+                                </div>
+                            </div>
+                     </div>
+                    <div className="p-2 mt-6 mb-5 md:mt-8">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Outils / IDE **</h6>
+                        <div className="flex justify-around items-center mt-4">
+                                
                             <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>FIGMA</p>
-                                <FaFigma   className="text-colorMarronFonce text-2xl" />
+                                <p className='text-colorMarronFonce text-xs'>VS CODE</p>
+                                <TbBrandVscode  className="text-colorMarronFonce text-2xl" />
+                            </div>
+                             <div className='flex flex-col items-center'>
+                                 <p className='text-colorMarronFonce text-xs'>PHP STORM</p>
+                                <SiPhpstorm   className="text-colorMarronFonce text-2xl" />
                             </div>
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>DOCKER</p>
-                                < FaDocker className="text-colorMarronFonce text-2xl" />
+                                <FaDocker className="text-colorMarronFonce text-2xl" />
                             </div>
-                        </div>
-                    </div>
+                         </div>
+                    </div> 
                 </div>
             </div>
         </>

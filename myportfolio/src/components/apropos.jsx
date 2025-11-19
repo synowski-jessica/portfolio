@@ -44,7 +44,7 @@ const Apropos = () => {
                         <div className='col-span-1 md:col-span-4 border border-colorRoseBackground p-3 rounded-lg custom-shadow' data-aos="fade-down-left">
                             <h2 className='text-colorMarron text-center text-lg italic'>Pourquoi le développement web ?</h2>
                             <p className='text-colorMarron my-3 text-sm '>Ce qui m’a attirée dans l’informatique, c’est l’envie de comprendre ce qui se cache derrière les ERP. J’ai commencé à apprendre en <span className='font-bold'>autodidacte</span>, passant des heures à coder, jusqu’à ce que mon conjoint me rappelle qu’il était temps d’aller se coucher 😂.</p>
-                            <p className='text-colorMarron my-3 text-sm '>Mon expérience chez Ada a confirmé mon coup de cœur pour ce domaine. Que ce soit le back-end ou le front-end, je trouve cet <span className='font-bold'>univers passionnant</span>, sans place pour la routine. J’ai cependant une <span className='font-bold'>préférence pour le front</span>, qui stimule ma <span className='font-bold'>créativité</span>. Aujourd’hui, j’ai enfin le sentiment d’avoir trouvé ma voie.
+                            <p className='text-colorMarron my-3 text-sm '>Mon annéed d’alternance a confirmé ce coup de coeur pour ce domaine. Que ce soit le back-end ou le front-end, je trouve cet <span className='font-bold'>univers passionnant</span>, sans place pour la routine. J’ai cependant une <span className='font-bold'>préférence pour le front</span>, qui stimule ma <span className='font-bold'>créativité</span>. Aujourd’hui, j’ai enfin le sentiment d’avoir trouvé ma voie.
                             </p>
                         </div>
 
