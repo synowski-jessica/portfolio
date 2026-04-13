@@ -1,7 +1,5 @@
 import Skills from '../assets/skills.png'
-import Equipe from '../assets/equipe.png'
-import Curiosite from '../assets/curiosite.png'
-import Autonomie from '../assets/autonomie.png'
+
 import { FaReact } from "react-icons/fa";
 import { TbBrandSass } from "react-icons/tb";
 import { SiPhpstorm } from "react-icons/si";
@@ -23,6 +21,8 @@ import { FaWordpressSimple } from "react-icons/fa";
 import { FiDatabase } from "react-icons/fi";
 import { FaFigma } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
+import { FaShopify } from "react-icons/fa";
+import { RiNotionFill } from "react-icons/ri";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -123,39 +123,44 @@ const Competences = () => {
                 </div>
                 <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 md:col-start-2 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow" data-aos="flip-right" data-aos-delay="400" data-aos-duration="1400">
                     <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2" >MES SOFTSKILLS</h5>
-                    <div className="p-2 mt-3">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Esprit d’équipe **</h6>
+                    <div className="p-2 mt-3 md:px-10">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Rigueur & Qualité</h6>
                         <div className="flex justify-around items-center mt-2">
                             <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>Multiples projets  de groupe avec la méthode Agile pendant la formation chez ADA où la <span className='font-bold'>communication</span> est la clé</p>
-                                <img src={Equipe} alt="image d'équipe" className='w-48 h-24'/>
+                                <p className='text-colorMarronFonce text-xs'>Intégration pixel-perfect avec une attention particulière aux détails. Respect des standards d’accessibilité (RGAA) sur des projets en production.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-6 md:mt-10">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Curiosité & apprentissage continu **</h6>
+                    <div className="p-2 mt-6 md:mt-10 md:px-10 lg:px-20">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Autonomie & Organisation</h6>
                         <div className="flex justify-around items-center mt-2">
                             <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>Intérêt pour l’apprentissage de nouvelles technologies et tendances du développement web</p>
-                                <img src={Curiosite} alt="image d'équipe" className='w-24 h-24'/>
+                                <p className='text-colorMarronFonce text-xs'>Gestion d’un projet RNCP en parallèle de l’alternance, en full remote. Capacité à organiser, prioriser et livrer efficacement en autonomie.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-6 md:mt-10">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Organisation & Autonomie **</h6>
+                    <div className="p-2 mt-6 md:mt-10 md:px-10 lg:px-20">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Esprit d’équipe</h6>
                         <div className="flex justify-around items-center mt-2">
                             <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>Capacité à travailler de manière autonome et à gérer efficacement les projets sans supervision constante.</p>
-                                <img src={Autonomie} alt="image d'équipe" className='w-24 h-24'/>
+                                <p className='text-colorMarronFonce text-xs'>Collaboration avec les équipes back-end chez Eminza pour structurer et organiser les données de manière efficace. Travail en binôme sur AccessCollect et participation aux rituels Agile (SCRUM, weekly).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-2 mt-6 md:mt-10 md:px-10 lg:px-20">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Curiosite</h6>
+                        <div className="flex justify-around items-center mt-2">
+                            <div className='flex flex-col items-center'>
+                                <p className='text-colorMarronFonce text-xs'>Reconversion réussie dans le développement web. Apprentissage en autodidacte de nouveaux outils comme Shopify et Inkscape.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="col-span-1 mx-4 md:mx-auto md:col-span-4 bg-colorRoseNav rounded-md mt-3 md:mt-8 custom-shadow"data-aos="flip-left" data-aos-delay="400" data-aos-duration="1600">
                     <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2">MES HARDSKILLS</h5>
-                    <div className="p-2 mt-3">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Front End **</h6>
-                        <div className="flex justify-around items-center mt-4">
+                    <div className="p-2 mt-3 md:px-10">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Front End</h6>
+                        <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2 ">
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>REACT</p>
                                 <FaReact className="text-colorMarronFonce text-2xl" />
@@ -180,11 +185,15 @@ const Competences = () => {
                                 <p className='text-colorMarronFonce text-xs'>WORDPRESS</p>
                                 <FaWordpressSimple   className="text-colorMarronFonce text-2xl" />
                             </div>
+                            <div className='flex flex-col items-center'>
+                                <p className='text-colorMarronFonce text-xs'>SHOPIFY</p>
+                                <FaShopify   className="text-colorMarronFonce text-2xl" />
+                            </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-6 md:mt-8">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Back End **</h6>
-                        <div className="flex justify-around items-center mt-4">
+                    <div className="p-2 md:px-10">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Back End</h6>
+                        <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>MYSQL</p>
                                 <DiMysql className="text-colorMarronFonce text-2xl" />
@@ -203,10 +212,10 @@ const Competences = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="p-2 mt-6 flex justify-between gap-20 md:mt-8">
+                    <div className="p-2 flex justify-between gap-4 md:px-10">
                         <div className='w-1/2'>
-                            <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Design **</h6>
-                            <div className="flex justify-around items-center mt-4">
+                            <h6 className="text-center text-colorMarronFonce text-lg font-bold">Design</h6>
+                            <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                                 
                                 <div className='flex flex-col items-center'>
                                     <p className='text-colorMarronFonce text-xs'>FIGMA</p>
@@ -223,8 +232,8 @@ const Competences = () => {
                             </div>
                         </div>
                         <div className='w-1/2'>
-                            <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Tests **</h6>
-                            <div className="flex justify-around items-center mt-4">
+                            <h6 className="text-center text-colorMarronFonce text-lg font-bold">Tests</h6>
+                            <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                                 
                                 <div className='flex flex-col items-center'>
                                     <p className='text-colorMarronFonce text-xs'>JEST</p>
@@ -237,9 +246,9 @@ const Competences = () => {
                             </div>
                         </div>
                     </div>
-                     <div className="p-2 mt-6 md:mt-8">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Gestion & Collaboration **</h6>
-                            <div className="flex justify-around items-center mt-4">
+                     <div className="p-2 md:px-10">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Gestion & Collaboration</h6>
+                            <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                                 <div className='flex flex-col items-center'>
                                     <p className='text-colorMarronFonce text-xs'>JIRA</p>
                                     <SiJira     className="text-colorMarronFonce text-2xl" />
@@ -256,12 +265,15 @@ const Competences = () => {
                                     <p className='text-colorMarronFonce text-xs'>GITLAB</p>
                                     < IoLogoGitlab   className="text-colorMarronFonce text-2xl" />
                                 </div>
+                                <div className='flex flex-col items-center'>
+                                    <p className='text-colorMarronFonce text-xs'>NOTION</p>
+                                    < RiNotionFill   className="text-colorMarronFonce text-2xl" />
+                                </div>
                             </div>
                      </div>
-                    <div className="p-2 mt-6 mb-5 md:mt-8">
-                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">** Outils / IDE **</h6>
-                        <div className="flex justify-around items-center mt-4">
-                                
+                    <div className="p-2 mb-5 md:px-10">
+                        <h6 className="text-center text-colorMarronFonce text-lg font-bold">Outils / IDE</h6>
+                        <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2"> 
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>VS CODE</p>
                                 <TbBrandVscode  className="text-colorMarronFonce text-2xl" />

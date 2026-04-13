@@ -12,7 +12,7 @@ const Icone = () => {
                 <a href="https://github.com/synowski-jessica/" target='_blank'><FaGithub className='size-8 md:size-16 text-white animate-slow-bounce  md:animate-none hover:animate-bounce transition duration-300 ease-in-out'style={{ animationDelay: '0.3s' }}/></a>
             </div>
             <div>
-                <a href="https://synowski-jessica.github.io/portfolio/cvJessicaSynowski.pdf" target='_blank' download className='text-white text-3xl md:text-6xl'><h4 className="animate-slow-bounce  md:animate-none hover:animate-bounce transition duration-300 ease-in-out" style={{ animationDelay: '0.6s' }}>CV</h4></a>
+                <a href="/portfolio/cvJessicaSynowski2.pdf" target='_blank' download className='text-white text-3xl md:text-6xl'><h4 className="animate-slow-bounce  md:animate-none hover:animate-bounce transition duration-300 ease-in-out" style={{ animationDelay: '0.6s' }}>CV</h4></a>
             </div>
         </div>
         

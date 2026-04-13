@@ -22,12 +22,12 @@ const CardProject =()=>{
             }
             `} data-aos="zoom-in-up">
                 {data.video?
-                (<video controls >
-                    <source src={data.video} type="video/mp4" className="w-96 h-60 mt-2 rounded-md" />
+                (<video controls className="w-full aspect-video object-cover rounded-md" >
+                    <source src={data.video} type="video/mp4"/>
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>
                 ):(
-                    <img src={data.image} alt={`site ${data.titre}`} className=""/>
+                    <img src={data.image} alt={`site ${data.titre}`} className="w-full aspect-video object-cover rounded-md"/>
                 )}
                  
                 <h5 className="text-colorMarronFonce mt-2">{data.titre}</h5>
