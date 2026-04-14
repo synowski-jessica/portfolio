@@ -1,5 +1,12 @@
 import OkaMeuble from '../../assets/okaMeuble.png'
 import Portfolio from '../../assets/portfolio.png'
+import AccessCollect from '../../assets/accesscollectposter.png'
+import Mastermind from '../../assets/mastermind.png'
+import AirNephis from '../../assets/airNephis.png'
+import Pictoria from '../../assets/pictoria.png'
+import ReseauSocialPhp from '../../assets/reseausocialphp.png'
+import TrioGourmet from '../../assets/triogourmet.png'
+import Rainbow6 from '../../assets/rainbow6.png'
 
 const BASE=import.meta.env.BASE_URL;
 
@@ -16,6 +23,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"Visiter le site",
             "site":"https://access-collect.vercel.app/",
+            "poster":AccessCollect,
             "image":"",
             "video":BASE +"/videos/accesscollect.mp4"
         },
@@ -30,6 +38,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"Visiter le site",
             "site":"https://air-nephis.fr/" ,
+            "poster":AirNephis,
             "image": "",
             "video":BASE +"/videos/nephis.mp4"
         },
@@ -44,6 +53,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"",
             "site":"",
+            "poster":Pictoria,
             "image":"",
             "video":BASE +"/videos/pictoria.mp4"
         },
@@ -58,6 +68,7 @@ const dataProjets=
             "githubv2":"https://github.com/synowski-jessica/mastermindV2POO",
             "titreSite":"Jouer",
             "site":"https://synowski-jessica.github.io/mastermind/" ,
+            "poster":Mastermind,
             "image":"",
             "video":BASE +"/videos/mastermind.mp4"
         },
@@ -72,6 +83,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"",
             "site":"" ,
+            "poster":"",
             "image":Portfolio,
             "video":""
         },
@@ -86,6 +98,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"Visiter le site",
             "site":"https://synowski-jessica.github.io/rainbow6/" ,
+            "poster":Rainbow6,
             "image":"",
             "video":BASE +"/videos/rainbow6.mp4"
         },
@@ -100,6 +113,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"Visiter le site",
             "site":"https://synowski-jessica.github.io/le_trio-gourmet_jay/" ,
+            "poster":TrioGourmet,
             "image":"",
             "video":BASE +"/videos/dataviz.mp4"
         },
@@ -114,6 +128,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"",
             "site":"" ,
+            "poster":ReseauSocialPhp,
             "image":"",
             "video":BASE +"/videos/reseauSocialPHP.mp4"
         },
@@ -128,6 +143,7 @@ const dataProjets=
             "githubv2":"",
             "titreSite":"",
             "site":"" ,
+            "poster":"",
             "image":OkaMeuble,
             "video":""
         },

@@ -13,6 +13,7 @@ const CardProject =()=>{
     return(
             <>
             {dataProjets.map((data)=>(
+                console.log(data.id, data.poster),
             <div key={data.id} className={`${
                 data.id===1||data.id===4||data.id===7
                 ?'md:col-start-2 md:col-span-3 border border-colorRoseBackground custom-shadow p-4 rounded-lg'
@@ -22,7 +23,11 @@ const CardProject =()=>{
             }
             `} data-aos="zoom-in-up">
                 {data.video?
-                (<video controls className="w-full aspect-video object-cover rounded-md" >
+                (<video 
+                    controls
+                    className="w-full aspect-video object-cover rounded-md"
+                    poster={data.poster}
+                    preload="none" >
                     <source src={data.video} type="video/mp4"/>
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>

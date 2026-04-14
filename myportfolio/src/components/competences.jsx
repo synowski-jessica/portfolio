@@ -160,7 +160,7 @@ const Competences = () => {
                     <h5 className="text-center tracking-widest text-3xl text-colorMarronFonce shadow-md shadow-colorRoseBackground p-2">MES HARDSKILLS</h5>
                     <div className="p-2 mt-3 md:px-10">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">Front End</h6>
-                        <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2 ">
+                        <div className="flex flex-wrap gap-x-8 gap-y-4 justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2 md:gap-x-4 ">
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>REACT</p>
                                 <FaReact className="text-colorMarronFonce text-2xl" />
@@ -193,7 +193,7 @@ const Competences = () => {
                     </div>
                     <div className="p-2 md:px-10">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">Back End</h6>
-                        <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
+                        <div className="flex flex-wrap gap-x-6 gap-y-4 justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>MYSQL</p>
                                 <DiMysql className="text-colorMarronFonce text-2xl" />
@@ -207,15 +207,15 @@ const Competences = () => {
                                 <DiPostgresql  className="text-colorMarronFonce text-2xl" />
                             </div>
                             <div className='flex flex-col items-center'>
-                                <p className='text-colorMarronFonce text-xs'>ORM SEQUILIZE</p>
+                                <p className='text-colorMarronFonce text-xs'>SEQUILIZE</p>
                                 <FiDatabase  className="text-colorMarronFonce text-2xl" />
                             </div>
                         </div>
                     </div>
-                    <div className="p-2 flex justify-between gap-4 md:px-10">
-                        <div className='w-1/2'>
+                    <div className="p-2 grid grid-cols-1 md:grid-cols-2 gap-4 md:px-10">
+                        <div className=''>
                             <h6 className="text-center text-colorMarronFonce text-lg font-bold">Design</h6>
-                            <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
+                            <div className="flex flex-wrap gap-x-8 gap-y-4 justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                                 
                                 <div className='flex flex-col items-center'>
                                     <p className='text-colorMarronFonce text-xs'>FIGMA</p>
@@ -231,9 +231,9 @@ const Competences = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-1/2'>
+                        <div className=''>
                             <h6 className="text-center text-colorMarronFonce text-lg font-bold">Tests</h6>
-                            <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
+                            <div className="flex flex-wrap gap-x-8 gap-y-4 justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                                 
                                 <div className='flex flex-col items-center'>
                                     <p className='text-colorMarronFonce text-xs'>JEST</p>
@@ -248,7 +248,7 @@ const Competences = () => {
                     </div>
                      <div className="p-2 md:px-10">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">Gestion & Collaboration</h6>
-                            <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
+                            <div className="flex flex-wrap gap-x-8 gap-y-4 justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2">
                                 <div className='flex flex-col items-center'>
                                     <p className='text-colorMarronFonce text-xs'>JIRA</p>
                                     <SiJira     className="text-colorMarronFonce text-2xl" />
@@ -273,7 +273,7 @@ const Competences = () => {
                      </div>
                     <div className="p-2 mb-5 md:px-10">
                         <h6 className="text-center text-colorMarronFonce text-lg font-bold">Outils / IDE</h6>
-                        <div className="flex justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2"> 
+                        <div className="flex flex-wrap gap-x-8 gap-y-4 justify-around items-center mt-4 border border-colorRoseBackground rounded-xl p-2"> 
                             <div className='flex flex-col items-center'>
                                 <p className='text-colorMarronFonce text-xs'>VS CODE</p>
                                 <TbBrandVscode  className="text-colorMarronFonce text-2xl" />
